@@ -1,0 +1,447 @@
+body{
+	width: 100%;
+	height: auto;	
+	overflow-x: hidden;
+}
+
+#header{
+	width: 100%;
+	height: 8%;
+	position: fixed;
+	background-color: darkgray;
+	opacity: 0.8;
+	z-index: 2;	
+}
+#header ul{ list-style-type:none; margin:0; padding:0;}
+#header li{
+	display:inline; 
+	width: 20%;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------PAGINA UNO--------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+#page_one{
+	width: 200%;
+	height: 100%; 		
+	position: absolute;
+	background-image: url('../img/pageOne.png');
+	perspective: 800px;
+}
+#page_one table{	
+	display: table-cell;
+    vertical-align: middle;    
+}
+#tablaCentrada{	
+	height: 70%;	
+	margin-top: 13%;		
+}
+#page_one table td{text-align:left; vertical-align:middle}
+#page_one h1{
+	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	font-size: 700%;
+	color: #414141;
+}
+#page_one label{
+	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	font-size: 250%;
+	color: #767a2f;	
+}
+
+#pag1Left button {	
+	border: black;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	font-size: 120%;
+	padding: 1% 1.5%;
+	cursor: pointer;	
+}
+#pag1Left button:hover{background: gray;}
+
+#pag1Left{
+	width: 50%;
+	height: 100%; 		
+	margin-left: 0;
+	left: 0;	
+	position: absolute;
+}
+
+#pag1Right{
+	width: 50%;
+	height: 100%;
+	margin-left: 50%;
+	left: 50%;
+	background-image: url('../img/pageOne.png');
+	position: absolute;
+	color: black;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------PAGINA DOS--------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+#page_two{
+	width: 100%;
+	height: 100%;
+	top: 100%;
+	position: absolute;
+	background-color: #0e4d53;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------PAGINA TRES--------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------*/
+#page_tree{
+	width: 200%;
+	height: 100%; 
+	top: 200%;	
+	position: absolute;
+	background-color: #bec465;	
+}
+#pag3Left{
+	width: 50%;
+	height: 100%; 		
+	margin-left: 0;
+	left: 0;
+	background-color: #bec465;
+	position: absolute;
+}
+
+#pag3Left button {	
+	border: black;
+	border-style: solid;
+	border-width: 2px;	
+	font-size: 150%;
+	cursor: pointer;	
+}
+#pag3Left button:hover{background: gray;}
+
+#pag3Right{
+	width: 50%;
+	height: 100%;
+	margin-left: 50%;
+	left: 50%;
+	background-color: #bec465;
+	position: absolute;
+	color: black;
+}
+#pag3Right button {	
+	border: black;
+	border-style: solid;
+	border-width: 1.5px;
+	font-size: 100%;
+	cursor: pointer; 	
+}
+#pag3Right button:hover{background: gray;}
+
+#fondoBlanco, #fondo{
+	width: 40%;
+	height: 100%;
+	margin-left: 10%;		
+	position: absolute;	
+	background-color: white;	
+}
+#fondoBlanco{opacity: 0.7;}
+#fondo{ padding-left: 5%; padding-top: 8%;}
+#fondo form input.texto {	
+	border: darkgray;
+	border-style: solid;
+	border-width: 1px;		
+	padding-bottom: 1%;	
+	padding-top: 1%;
+	width: 80%;	
+	font-family: arial,sans-serif;
+	display: block;
+	position: relative;
+}
+#fondo form textearea{ 
+	border: darkgray;
+	border-style: solid;
+	border-width: 1px;			
+	width: 80%;	
+	height: 30%;
+	font-family: arial,sans-serif;	
+	position: absolute;
+	resize:none;
+}
+#fondo legend, label{font-family: "Arial Rounded MT Bold", Monaco, monospace;}
+#fondo legend{font-size: 300%;}
+#fondo label {display: block; margin: 1em 0 0 0;}
+#fondo button {
+	float: left;
+	position: relative;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: block;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------PAGINA CUATRO--------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+#page_four{
+	width: 100%;
+	height: 100%;
+	top: 300%;
+	position: absolute;
+	background-color: yellow;
+}
+
+#page_five{
+	width: 100%;
+	height: 100%;
+	top: 400%;
+	position: absolute;
+	background-color: #5c110f;
+}
+
+#numero{
+	margin-top: 15%;
+	margin-left: 5%;
+	font-size: 15em;
+	font-family: Verdana, Geneva, sans-serif;	
+}
+
+/* :: Navbar
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+#trans-nav { 
+	list-style-type: none; 
+	height: 7%; 
+	width: 100%;
+	padding: 0; 
+	margin: 0; 
+	z-index: 2;
+	position: fixed;
+	background-color: #5a5a5a; 
+}
+
+#trans-nav img{
+	float: left;
+	position: relative; 
+	width: 3.5%;
+	height: 90%;
+	margin-top: 0.2%;
+	margin-left: 1%;
+}
+
+#trans-nav label{
+	float: left;
+	position: relative; 
+	padding: 0; 
+	height: 100%;
+	line-height: 200%; 	
+	background-color: #5a5a5a; 
+	display: block; 
+	padding: 0 1.5%; 	
+	text-decoration: none;	
+	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	font-size: 150%;
+	text-align: center;
+	color: #dddddd;
+}
+
+#trans-nav li { 
+	float: right; 
+	position: relative; 
+	padding: 0; 
+	height: 100%;
+	line-height: 300%; 	
+	background-color: #5a5a5a; 
+	display: block; 
+	padding: 0 15px; 	
+	text-decoration: none;	
+	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	font-size: 100%;
+	text-align: center;
+	color: #dddddd;
+}
+
+#trans-nav li:hover { 
+	background-position: 0 -40px; 
+	color: black;
+	background-color: darkgray;
+}
+
+#trans-nav li ul { 
+	opacity: 0; 
+	position: absolute; 
+	left: 0; 
+	width: 8em; 
+	background: #63867f; 
+	list-style-type: none; 
+	padding: 0; 
+	margin: 0; 
+}
+
+#trans-nav li:hover ul {opacity: 1;	}
+
+#trans-nav li ul li {
+	float: none; 
+	position: static; 
+	height: 0; 
+	line-height: 0; 
+	background: none; 	
+}
+
+#trans-nav li:hover ul li { 
+	height: 120%; 
+	line-height: 250%; 
+	background-color: darkgray; 
+}
+
+#trans-nav li:hover ul li:hover { background-color: white; opacity: 0.7;}
+
+#trans-nav-line{
+	opacity: 0.7;
+	height: 1.5%; 
+	width: 100%;	
+	z-index: 1;
+	position: fixed;
+	background-color: gray;
+	top: 7%;
+}
+
+#active{color: #ffffff;}
+
+/* :: Social
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------*/
+#facebook{
+	position: fixed;
+	right: 0;
+	top: 40%;
+	width: 4%;
+	height: 6%;
+	background-color: #4a6ea9;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	z-index: 2;
+}
+#facebook img{width: auto;}
+#facebook:hover{width: 10%;}
+#facebook:hover img{width: auto;}
+
+#twitter{
+	position: fixed;
+	right: 0;
+	top: 46%;
+	width: 4%;
+	height: 6%;
+	background-color: #32def4;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	z-index: 2;
+}
+#twitter img{width: auto;}
+#twitter:hover{width: 10%;}
+#twitter:hover img{width: auto;}
+
+#github{
+	position: fixed;
+	right: 0;
+	top: 52%;
+	width: 4%;
+	height: 6%;
+	background-color: #3b3b3b;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	z-index: 2;
+}
+#github img{width: auto;}
+#github:hover{width: 10%;}
+#github:hover img{width: auto;}
+
+#rss{
+	position: fixed;
+	right: 0;
+	top: 58%;
+	width: 4%;
+	height: 6%;
+	background-color: #f4b83f;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	z-index: 2;
+}
+#rss img{width: auto;}
+#rss:hover{width: 10%;}
+#rss:hover img{width: auto;}
+
+#more{
+	position: fixed;
+	right: 0;
+	top: 64%;
+	width: 4%;
+	height: 6%;
+	background-color: #8d8d8d;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	z-index: 2;
+	cursor: pointer;
+}
+#more img{width: auto;}
+#more:hover{width: 10%;}
+#more:hover img{width: auto;}
+
+/* :: Footer
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+--------------------------------------------------------------------*/
+
+#footer{
+	width: 100%;
+	height: 30%;
+	top: 500%;
+	position: absolute;
+	background-color: #524f4f;
+	text-align: center;
+}
+
+#izquierdo{
+	width: 33.33%;
+	height: 100%;
+	background-color: #438bfb; /*#e3b639;*/
+	left: 0;
+	position: absolute;
+}
+
+#centro{
+	width: 33.33%;
+	height: 100%;	
+	left: 33.33%;
+	background-color: #10bef2; /*#b2b85c;*/
+	position: absolute;
+}
+
+#derecho{
+	width: 33.33%;
+	height: 100%;	
+	right: 0;
+	background-color: #00a8ec; /*#2979bd;*/
+	position: absolute;
+}
+
+#izquierdo label, #centro label, #derecho label{ 
+	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	font-size: 150%;
+	text-align: center;
+	color: white;
+}
+
+#lineaFondo{
+	margin-bottom: 0;
+	background-color: darkgray;
+	width: 100%;
+	height: 7%;
+	opacity: 0.8;
+	position: absolute;
+}

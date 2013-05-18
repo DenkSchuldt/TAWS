@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	    
+		<title>TAWS Group</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">	
+		<meta name="author" content="TAWS">
+		<meta name="description" content="">    
+		<link rel="stylesheet" type="text/css" href="css/reset.css" type="text/css">								
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" type="text/css">
+		<script language="JavaScript" type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="js/functions.js"></script>		
+	</head>
+	<body>
+		<!-- Header -->
+		<ul id="trans-nav">
+			<img src="img/taws.png" width="100%" height="100%" onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;"/>
+			<label onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;">TAWS</label>
+			<li onclick="moveVerticalTo(position('page_five'),1000)" style="cursor: pointer;" id="active">Contactos</li>
+			<li onclick="moveVerticalTo(position('page_four'),1000)" style="cursor: pointer;">Investigacion</li>
+			<li onclick="moveVerticalTo(position('page_tree'),1000)" style="cursor: pointer;">Hazte Miembro</li>			
+			<li onclick="moveVerticalTo(position('page_two'),1000)" style="cursor: pointer;">Quienes Somos</li>			
+			<li onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;">Inicio</li>
+		</ul>
+		<div id="trans-nav-line"></div>
+		<!-- End -->
+		
+		<!-- Social -->
+		<a href="https://www.facebook.com/tawsespol" target="_blank">
+			<div id="facebook">
+				<img src="img/facebook.png" width="100%" height="100%"/>
+			</div>
+		</a>
+		<a href="https://twitter.com/taws_espol" target="_blank">
+			<div id="twitter">
+				<img src="img/twitter.png" width="100%" height="100%"/>
+			</div>
+		</a>
+		<a href="https://github.com/taws" target="_blank">
+			<div id="github">
+				<img src="img/github.png" width="100%" height="100%"/>
+			</div>
+		</a>
+		<a href="http://feeds.feedburner.com/taws" target="_blank">
+			<div id="rss">
+				<img src="img/rss.png" width="100%" height="100%"/>
+			</div>
+		</a>				
+		<div id="more" onclick="moveVerticalTo(position('footer'),1000)">
+			<img src="img/more.png" width="100%" height="100%"/>
+		</div>				
+		<!-- End -->
+				
+		<div id="page_one">
+			<div id="pag1Left">
+				<center>
+					<div id="tablaCentrada">
+						<table border=0>
+							<tbody>
+								<tr>
+									<td align="center" valign="middle"><img src="img/taws.png" alt="TAWS"></td>
+									<td align="center" valign="middle">
+										<h1>TAWS</h1>
+										<label>Grupo de investigación de la FIEC</label><br>
+										<label>Coordinado por MSc. Vanessa Cedeño</label><br><br>
+										<button type="button" onClick="moveToRight('#page_one')">Mision y Vision</button>
+									</td>
+								</tr>					
+							</tbody>
+						</table>
+					</div>
+				</center>
+			</div> 
+			<div id="pag1Right">
+				<br><br><br><br><br><br>
+				<button type="button" onClick="moveToLeft('#page_one')">Volver</button>
+			</div>						
+		</div>
+		<div id="page_two">
+			<p id="numero">Quienes Somos</p>
+		</div>
+		<div id="page_tree">
+			<div id="pag3Left">
+				<p id="numero">Hazte Miembro</p>
+				<button type="button" id="botonRight" onClick="moveToRight('#page_tree')">Solicitar</button>
+				<p>Lorem ipsum dolor ...</p>				
+			</div> 
+			<div id="pag3Right">
+				<div id="fondoBlanco"></div>
+				<div id="fondo">
+					<form>
+						<fieldset>
+							<legend>Acerca de ti:</legend><br/><br/>
+							<label>Tu Nombre (Requerido)</label>
+							<input class="texto" type='text' name="txtNombre">
+							<label>Tu Email (Requerido)</label>
+							<input class="texto" type='text' name="txtMail">
+							<label>Carrera</label>
+							<input class="texto" type='text' name="txtCarrera">
+							<label>Lenguaje de programación que mejor manejas</label>
+							<input class="texto" type='text' name="txtCarrera">
+							<label>¿Por qué quieres ingresar a TAWS?</label>
+							<textarea type='text'></textarea>
+							<br/><br/><br/>
+							<button type="button" onClick="alertar()">Enviar</button>
+							<button type="button" onClick="moveToLeft('#page_tree')">Cancelar</button>				
+						</fieldset>
+					</form>
+				</div>	
+			</div>
+		</div>
+		<div id="page_four">
+			<p id="numero">Investigacion</p>
+		</div>
+		<div id="page_five">
+			<p id="numero">Contactos</p>
+		</div>
+		<div id="footer">
+			<div id="izquierdo">
+				<br/><br/><img src="img/phone.png" width="25%" height="50%"/><br/><br/>
+				<label>593 (4) 2 269 852</label>
+			</div>
+			<div id="centro">
+				<br/><br/><img src="img/skype.png" width="25%" height="50%"/><br/><br/>
+				<label>taws_espol</label>
+			</div>
+			<div id="derecho">
+				<br/><br/><img src="img/mail.png" width="25%" height="50%"/><br/><br/>
+				<label>taws@espol.edu.ec</label>
+			</div>
+			<div id="lineaFondo"></div>
+		</div>
+	</body>
+</html>
