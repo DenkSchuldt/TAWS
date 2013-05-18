@@ -16,7 +16,7 @@
 		<ul id="trans-nav">
 			<img src="img/taws.png" width="100%" height="100%" onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;"/>
 			<label onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;">TAWS</label>
-			<li onclick="moveVerticalTo(position('page_five'),1000)" style="cursor: pointer;" id="active">Contactos</li>
+			<li onclick="moveVerticalTo(position('page_five'),1000)" style="cursor: pointer;" id="active">Contacto</li>
 			<li onclick="moveVerticalTo(position('page_four'),1000)" style="cursor: pointer;">Investigacion</li>
 			<li onclick="moveVerticalTo(position('page_tree'),1000)" style="cursor: pointer;">Hazte Miembro</li>			
 			<li onclick="moveVerticalTo(position('page_two'),1000)" style="cursor: pointer;">Quienes Somos</li>			
@@ -77,7 +77,10 @@
 			</div>						
 		</div>
 		<div id="page_two">
-			<p id="numero">Quienes Somos</p>
+			<p id="numero">Qui&eacute;nes Somos</p>
+  		<p class="c-quienes-somos" >Somos un grupo de amigos, entre estudiantes, graduados y profesores 
+  		que compartimos lo que aprendemos en temas relacionados al desarrollo de programas 
+  		en la web y dispositivos móviles</p>
 		</div>
 		<div id="page_tree">
 			<div id="pag3Left">
@@ -113,22 +116,30 @@
 			<p id="numero">Investigacion</p>
 		</div>
 		<div id="page_five">
-			<p id="numero">Contactos</p>
+			<p id="numero">Contacto</p>
+			<div class="contact" id="pstn">
+        <div>
+          <img src="img/phone.png" />
+				  <p>593 (4) 2 269 852</p>
+  			</div>
+			</div>
+			<div class="contact" id="skype">
+			  <div>
+				  <img src="img/skype.png" />
+				  <p>taws_espol</p>
+   			</div>
+			</div>
+  		<div class="contact" id="email">
+  		  <div>
+          <img src="img/mail.png" />         
+			    <p>
+			      <a href="mailto:taws@espol.edu.ec?Subject=Saludos">
+			        taws@espol.edu.ec
+			      </a>
+			    </p>
+   			</div>
+			</div>
 		</div>
-		<div id="footer">
-			<div id="izquierdo">
-				<br/><br/><img src="img/phone.png" width="25%" height="50%"/><br/><br/>
-				<label>593 (4) 2 269 852</label>
-			</div>
-			<div id="centro">
-				<br/><br/><img src="img/skype.png" width="25%" height="50%"/><br/><br/>
-				<label>taws_espol</label>
-			</div>
-			<div id="derecho">
-				<br/><br/><img src="img/mail.png" width="25%" height="50%"/><br/><br/>
-				<label>taws@espol.edu.ec</label>
-			</div>
-			<div id="lineaFondo"></div>
-		</div>
+		
 	</body>
 </html>
