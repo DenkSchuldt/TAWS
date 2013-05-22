@@ -16,9 +16,9 @@
 		<ul id="trans-nav">
 			<img src="img/taws.png" width="100%" height="100%" onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;"/>
 			<label onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;">TAWS</label>
-			<li onclick="moveVerticalTo(position('page_five'),1000)" style="cursor: pointer;" id="active">Contactos</li>
+			<li onclick="moveVerticalTo(position('page_five'),1000)" style="cursor: pointer;" id="active">Contacto</li>
 			<li onclick="moveVerticalTo(position('page_four'),1000)" style="cursor: pointer;">Investigacion</li>
-			<li onclick="moveVerticalTo(position('page_tree'),1000)" style="cursor: pointer;">Hazte Miembro</li>			
+			<li onclick="moveVerticalTo(position('page_tree'),1000)" style="cursor: pointer;">Miembros</li>			
 			<li onclick="moveVerticalTo(position('page_two'),1000)" style="cursor: pointer;">Quienes Somos</li>			
 			<li onclick="moveVerticalTo(position('page_one'),1000)" style="cursor: pointer;">Inicio</li>
 		</ul>
@@ -61,9 +61,8 @@
 									<td align="center" valign="middle"><img src="img/taws.png" alt="TAWS"></td>
 									<td align="center" valign="middle">
 										<h1>TAWS</h1>
-										<label>Grupo de investigación de la FIEC</label><br>
-										<label>Coordinado por MSc. Vanessa Cedeño</label><br><br>
-										<button type="button" onClick="moveToRight('#page_one')">Mision y Vision</button>
+										<label class="desc-group">Grupo de investigación de tecnolog&iacute;as<br/> web y m&oacute;viles de la FIEC - ESPOL</label><br>
+<!--										<button type="button" onClick="moveToRight('#page_one')">Mision y Vision</button> -->
 									</td>
 								</tr>					
 							</tbody>
@@ -77,14 +76,63 @@
 			</div>						
 		</div>
 		<div id="page_two">
-			<p id="numero">Quienes Somos</p>
+			<p id="numero">Qui&eacute;nes <br/> Somos</p>
+  		<p class="c-quienes-somos" >
+Somos un grupo de amigos,
+estudiantes, graduados y profesores
+que compartimos lo que aprendemos
+en temas relacionados al desarrollo
+de programas en la web y dispositivos
+móviles.
+      </p>
+			<img id="pic-members" src="img/taws_miembros.jpg"/>
 		</div>
+		
 		<div id="page_tree">
+
 			<div id="pag3Left">
-				<p id="numero">Hazte Miembro</p>
-				<button type="button" id="botonRight" onClick="moveToRight('#page_tree')">Solicitar</button>
-				<p>Lorem ipsum dolor ...</p>				
+				<p id="numero">Miembros <br/> Taws</p>
+				<img id="pic-members" src="img/taws_miembros2.jpg"/>
+<!--				<button type="button" id="botonRight" onClick="moveToRight('#page_tree')">Quiero ser un miembro taws</button> -->
+				<div id="member-list">
+			    <h4>Coordinadora</h4>
+				  <ul>
+				    <li>Ing. Vanessa Cede&ntilde;o</li>
+				  </ul>
+				  <div  id="members-student">
+				    <h4>Estudiantes</h4>
+				    <ul>
+				      <li>Denny Schuldt</li>
+   				    <li>Bryan Garc&eacute;s</li>
+   				    <li>Gianina Vallejo</li>
+   				    <li>Angel Guerra</li>
+   				    <li>Alejandro Vinueza</li> 				    
+   				    <li>Jos&eacute; Bed&oacute;n</li> 				    
+   				    <li>Jefferson Rubio</li> 				     				    
+    		    </ul>
+   		    </div>
+  		    <div  id="members-engineer">
+    		    <h4> Graduados</h4>
+    		    <ul>
+   				    <li>Gustavo Salazar</li>
+				      <li>Marco Calder&oacute;n</li> 				    
+				      <li>Juan Plaza</li> 				    
+				      <li>Denisse Cayetano</li> 				    
+				      <li>F&eacute;lix Rivas</li> 				    
+				      <li>Allan Avenda&ntilde;o</li> 				    
+   				    <li>Gustavo Cali</li>
+   				    <li>Jorge Salas</li>   				    
+				    </ul>
+				  </div>
+				</div>
+
+<p type="button" id="bt-new-member" onClick="moveToRight('#page_tree')">C&oacute;mo ser parte de TAWS</p>
+
+  			<!--<button type="button" id="bt-new-member" onClick="moveToRight('#page_tree')">C&oacute;mo ser parte de TAWS</button>-->
+
+ 			  
 			</div> 
+			
 			<div id="pag3Right">
 				<div id="fondoBlanco"></div>
 				<div id="fondo">
@@ -111,24 +159,43 @@
 		</div>
 		<div id="page_four">
 			<p id="numero">Investigacion</p>
+			<div class="research-logos">
+			  <img  src="img/rails_logo.png" />
+    		<img  src="img/android_logo.png" />
+    		<img   src="img/play_logo.png" />
+    		<img   src="img/java_logo.gif" />  		
+    		<br/>
+    		<img   src="img/php_logo.png" />
+    		<img   src="img/git_logo.png" />
+    		<img   src="img/ruby_logo.png" />
+    		<img   src="img/html5_logo.png" />  		
+    	</div>
 		</div>
 		<div id="page_five">
-			<p id="numero">Contactos</p>
+			<p id="numero">Contacto</p>
+			<div class="contact" id="pstn">
+        <div>
+          <img src="img/phone.png" />
+				  <p>593 (4) 2 269 852</p>
+  			</div>
+			</div>
+			<div class="contact" id="skype">
+			  <div>
+				  <img src="img/skype.png" />
+				  <p>taws_espol</p>
+   			</div>
+			</div>
+  		<div class="contact" id="email">
+  		  <div>
+          <img src="img/mail.png" />         
+			    <p>
+			      <a href="mailto:taws@espol.edu.ec?Subject=Saludos">
+			        taws@espol.edu.ec
+			      </a>
+			    </p>
+   			</div>
+			</div>
 		</div>
-		<div id="footer">
-			<div id="izquierdo">
-				<br/><br/><img src="img/phone.png" width="25%" height="50%"/><br/><br/>
-				<label>593 (4) 2 269 852</label>
-			</div>
-			<div id="centro">
-				<br/><br/><img src="img/skype.png" width="25%" height="50%"/><br/><br/>
-				<label>taws_espol</label>
-			</div>
-			<div id="derecho">
-				<br/><br/><img src="img/mail.png" width="25%" height="50%"/><br/><br/>
-				<label>taws@espol.edu.ec</label>
-			</div>
-			<div id="lineaFondo"></div>
-		</div>
+		
 	</body>
 </html>
