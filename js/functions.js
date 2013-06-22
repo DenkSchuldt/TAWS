@@ -16,6 +16,20 @@
 			});			
 		}  
 	});
+
+	$(function(){
+		var pull = $('#pull');
+		var menu = $('#main_nav ul');				
+		var menuHeight = menu.height();		
+		$(pull).on('click', function(e){
+			e.preventDefault();
+			menu.slideToggle();
+		});
+		$(window).resize(function(){
+			var w = $(window).width();
+			
+		});
+	});
 	
 	function init(){		
 		for(var a=0; a<mermbers_lis.length; a++){
