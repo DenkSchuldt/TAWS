@@ -1,28 +1,24 @@
 
-.clearfix:before,.clearfix:after{content: " "; display: table;}
-.clearfix:after{clear: both;}
-.clearfix{*zoom: 1;}
-
-body{
+html, body{
 	width: 100%;
-	height: auto;	
-	overflow-x: hidden;
+	height: auto;
+	background-color: #EDF9EC;
 }
 
-#logo{
+header{
 	display: inline-block;
 	height: auto;
 	width: auto;
-	z-index: 3;
+	z-index: 101;
 	position: fixed;
 	color: white;
 	margin-left: 10px;
 	line-height: 40px;	
 	display: none;
 }
-#logo img, label{ vertical-align: middle;}
+header img,header label{ vertical-align: middle;}
 
-#main_nav{		
+nav{		
 	top: 0;
 	height: auto;
 	width: 100%;
@@ -30,252 +26,163 @@ body{
 	color: white;
 	background-color: rgb(90,90,90);
 	position: fixed;
-	z-index: 2;
-	display: block;	
+	z-index: 100;
+	display: block;
 }
-#main_nav ul{
+nav ul{
 	list-style-type: none; 
 	float: right;
 	margin: 0;	
 }
-#main_nav li{
+nav li{
 	display: inline-block;
 	position: relative;
 	padding: 15px;
 	float: left;
 	font-family: "Arial Rounded MT Bold", Monaco, monospace;
-	font-size: 1em;
+	font-size: 1.1em;
+	color: black;
 }
-#main_nav li:hover{
-	color: black;	
+nav li:hover{
+	color: white;
 	cursor: pointer;
 }
-
-#main_nav div#pull {
-	display: none;
+nav li:hover  a{ color: white; }
+nav ul li a{ text-decoration: none; color: black;}
+nav ul li a:hover{ color: white;}
+.show {
+  box-shadow: inset -2px 0 3px rgba(black,0.6);
+  max-height: 15em;
+}
+.nav-toggle{display: none;}
+.fixed{
+	position: fixed;
+	top: 0;
 }
 
-/*Styles for screen 800px and lower*/
-@media screen and (max-width: 800px){
-  	#main_nav li{		
-		padding: 10px;
-		font-size: 0.8em;
-	}	
-	#logo img{
-		width: 30px;
-		margin-top:-10px; 		
-	}
-	#logo label{
-		font-size: 0.8em;
-		margin-top: -42px;
-		margin-left: 33px;
-		position: fixed;
-	}
+#facebook, #twitter, #github, #rss, #blog{
+	position: fixed;
+	right: 0;	
+	width: 4%;
+	height: 6%;
+	transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	z-index: 2;
 }
+#facebook img, #twitter img, #github img, #rss img, #blog img{width: auto;}
+#facebook:hover, #twitter:hover, #github:hover, #rss:hover, #blog:hover{width: 10%; cursor:pointer;}
+#facebook:hover img, #twitter:hover img, #github:hover img, #rss:hover img, #blog:hover img{width: auto%;}
+#facebook{background-color: #4a6ea9;top: 34%;}
+#twitter{background-color: #32def4;top: 40%;}
+#github{background-color: #3b3b3b;top: 46%;}
+#rss{background-color: #f4b83f;top: 52%;}
+#blog{background-color: #8d8d8d;top: 58%;}
 
-/*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px){
-  	#main_nav li{		
-		padding: 7px;
-		font-size: 0.65em;
-	}
-	#logo img{
-		width: 25px;
-		margin-top:-20px; 		
-	}
-	#logo label{
-		font-size: 0.65em;
-		margin-top: -46px;
-		margin-left: 30px;		
-	}
-}
-
-
-/*Styles for screen 450px and lower*/
-@media only screen and (max-width : 450px) {
-	#main_nav{height: 30px;}
-	#main_nav ul {
-		margin-top: 30px;
-		width: 50%;
-		right: 0;
-		display: none;
-		background-color: rgb(90,90,90);
-	}
-	#main_nav li{
-		display: block;
-		width: 80%;
-		margin-left: 5%;
-		padding: 7px;
-		font-size: 0.65em;
-	}
-	#main_nav div#pull{display: block;}
-	#main_nav div#pull:hover{cursor:pointer;}
-	#main_nav div#pull:after {		
-		content: "";
-		background: url('../img/menu.png') no-repeat;
-		background-position: -5px 0px;
-		display: inline-block;
-		position: absolute;
-		width: 25px;
-		height: 50px;
-		right: 0;
-		top: 5px;
-	}	
-	#logo img{
-		width: 26px;
-		margin-top:-15px; 		
-	}
-	#logo label{
-		font-size: 0.8em;
-		margin-top: -44px;
-		margin-left: 30px;		
-	}
-}
-
-/*Smartphone*/
-@media only screen and (max-width : 320px) {
-	#main_nav{height: 25px;}	
-	#main_nav ul {margin-top: 25px;}	
-	#main_nav div#pull:after {		
-		background-position: -10px -5px;
-		width: 25px;				
-		height: 30px;
-		right: -5px;		
-		top: 4px;
-	}	
-	#logo img{
-		width: 23px;
-		margin-top:-18px; 		
-	}
-	#logo label{
-		font-size: 0.7em;
-		margin-top: -47px;
-		margin-left: 25px;		
-	}
-}
-
-#inicio{
-	color: black;
-	background-color: rgb(217,222,224);
-}
-#quienes{
-	color: black;
-	background-color: #4ba3a8;
-}
-#miembros{
-	color: black;
-	background-color: #bec465;
-}
-#investigacion{
-	color: black;
-	background-color: #FFFB1A;
-}
-#contacto{
-	color: black;
-	background-color: #EDF9EC;
-}
+#inicio{ background-color: rgb(217,222,224); }
+#quienes{ background-color: #4ba3a8; }
+#miembros{ background-color: #bec465; }
+#investigacion{ background-color: #FFFB1A; }
+#contacto{ background-color: #EDF9EC; }
 
 /*----------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------PAGINA UNO--------------------------------------------*/
+/*----------------------------------------------------PAGINA UNO--------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 #page_one{
-	width: 100%;
-	height: 100%; 		
-	position: absolute;
+	display: block;
 	background-image: url('../img/pageOne.png');
-	perspective: 800px;
+	padding-top: 100px;
+	padding-bottom: 60px;
 }
-
 #page_one img{
-	width: 30%;
-	top: 25%;
-	left: 10%;
-	position: absolute;
+	width: 40%;
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 10%;
 }
-
 #page_one h1{
+	font-size: 4em;
+	display: inline-block;
 	width: 40%;
-	top: 30%;
-	left: 47%;
+	margin-top: 50px;
 	font-family: "Arial Rounded MT Bold", Monaco, monospace;
-	font-size: 700%;
-	color: #414141;
-	position: absolute;
+	color: rgb(90,90,90);
 }
-#page_one p{
-	width: 40%;
-	top: 50%;
-	left: 47%;
-	//font-family: "Arial Rounded MT Bold", Monaco, monospace;
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	font-size: 250%;
-	color: #767a2f;
-	position: absolute;
-}
-
 
 /*----------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------PAGINA DOS--------------------------------------------*/
+/*----------------------------------------------------PAGINA DOS--------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 #page_two{
-	width: 100%;
-	height: 100%;
-	top: 100%;
-	position: absolute;
+	display: block;
 	background-color: #4ba3a8;	
+	padding-top: 100px;
+	padding-bottom: 100px;	
 }
-#page_two img{
-	top: 14%;
-	left: 40%;
-	position: absolute;
-	width: 40%;
-	height: 72%;
-}
-.c-quienes-somos{
+#page_two p{
 	color: white;
-	width: 30%;
-	left: 5%;	
-	font-size: 1.5em; 
-	//font-family: "Arial Rounded MT Bold", Monaco, monospace;
-	font-family: Consolas, monaco, monospace; 		
-	position: relative;	
-	//text-transform: uppercase;
-	margin-top: 1%;
+	width: 40%;
+	margin-left: 100px;
+	margin-top: 50px;
+	font-size: 2em;
+	font-family: Consolas, monaco, monospace;
+	display: inline-block;
 }
-
+#page_two div{
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin-top: -100px;
+}
+#page_two img{	
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
 /*----------------------------------------------------------------------------------------------------------*/
 /*---------------------------------------------------PAGINA TRES--------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------*/
 #page_tree{
-	width: 100%;
-	height: 100%; 
-	top: 200%;	
-	position: absolute;
-	background-color: #bec465;	
-}
-#page_tree img{
-	top: 14%;
-	left: 40%;
-	position: absolute;
-	width: 40%;
-	height: 72%;
+	display: block;
+	background-color: #bec465;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 #member-list {
-	position:relative;
-	left: 70px;
-	top: 10px;
 	font-family: Consolas, monaco, monospace;
-	width: 30%;
+	width: 35%;
+	margin-left: 100px;
+	margin-top: 50px;
+	font-size: 1.2em;
+	display: inline-block;
 }
-
 #member-list ul{
 	list-style-type: none;
 	margin-top: 5px;
 }
-#member-list div {width: 200px;}
+#member-list div {width: auto;}
 #member-list h4{margin-top: 10px;}
-#members-student {float: right;}
+#members-student, #members-engineer{
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#member-list a{
+	text-decoration: none;
+	color: black;
+}
+#members{
+	display: inline-block;
+	width: 45%;
+	vertical-align: top;
+	margin-top: -50px;
+}
+#members img{	
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+}
+
 
 #fondoBlanco, #fondo{
 	width: 40%;
@@ -324,11 +231,10 @@ body{
 /*---------------------------------------------------PAGINA CUATRO--------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------*/
 #page_four{
-	width: 100%;
-	height: 100%;
-	top: 300%;
-	position: absolute;
+	display: block;
 	background-color: #FFFB1A;
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 #makeMeScrollable{
@@ -399,176 +305,236 @@ div.scrollableArea{
 /*------------------------------------------------------------------------------------------------------------*/
 
 #page_five{
-	width: 100%;
-	height: 100%;
-	top: 400%;
-	position: absolute;
-//	background-color: #5c110f;
+	display: block;
 	background-color: #EDF9EC;
+	padding-top: 100px;
 }
-
-#page_five #information{
+#information{
 	width: 100%;
-	height: 30%;
-	top: 35%;	
-	position: absolute;
+	height: auto;
+	margin-top: 50px;
 }
 
 .contact{
+	display: inline-block;
 	width: 33.33%;
-	height: 100%;
-	background-color: #438bfb;
-	float: left;
 	color: white;
+	float: left;
 	font-family: "Arial Rounded MT Bold", Monaco, monospace;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	margin-bottom: 250px;
 }
 
-.contact div {
-  position: relative;
-  top: 15%;
+.contact h1, .contact p {
+	text-align: center;  
+	font-size: 2em;
+	margin: 0;
+	padding: 0;
 }
+.contact h1{ font-size: 7em;}
 
-.contact img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  height: 50%;
-  position: relative;
-  left: 40%;  
-}
+#phone{background-color: #438bfb;}
+#skype{background-color: #10bef2;}
+#email{background-color: #00a8ec;}
 
-.contact p {
-  text-align:center;  
-  font-size: 150%; 
-  position: relative;
-  top: 15%;
-}
-
-.contact p a {
-  color: white;
-  text-decoration: none;
-}
-
-#phone{
-	background-color: #438bfb; 
-}
-
-#skype{
-	background-color: #10bef2;
-}
-
-#email{
-	background-color: #00a8ec;
-}
-
-
-/* :: Social
---------------------------------------------------------------------
---------------------------------------------------------------------
---------------------------------------------------------------------*/
-#facebook{
-	position: fixed;
-	right: 0;
-	top: 35%;
-	width: 4%;
-	height: 6%;
-	background-color: #4a6ea9;
-	transition:width 0.5s;
-	-moz-transition:width 0.5s;
-	-webkit-transition:width 0.5s;
-	z-index: 2;
-}
-#facebook img{width: auto;}
-#facebook:hover{width: 10%;}
-#facebook:hover img{width: auto;}
-
-#twitter{
-	position: fixed;
-	right: 0;
-	top: 41%;
-	width: 4%;
-	height: 6%;
-	background-color: #32def4;
-	transition:width 0.5s;
-	-moz-transition:width 0.5s;
-	-webkit-transition:width 0.5s;
-	z-index: 2;
-}
-#twitter img{width: auto;}
-#twitter:hover{width: 10%;}
-#twitter:hover img{width: auto;}
-
-#github{
-	position: fixed;
-	right: 0;
-	top: 47%;
-	width: 4%;
-	height: 6%;
-	background-color: #3b3b3b;
-	transition:width 0.5s;
-	-moz-transition:width 0.5s;
-	-webkit-transition:width 0.5s;
-	z-index: 2;
-}
-#github img{width: auto;}
-#github:hover{width: 10%;}
-#github:hover img{width: auto;}
-
-#rss{
-	position: fixed;
-	right: 0;
-	top: 53%;
-	width: 4%;
-	height: 6%;
-	background-color: #f4b83f;
-	transition:width 0.5s;
-	-moz-transition:width 0.5s;
-	-webkit-transition:width 0.5s;
-	z-index: 2;
-}
-#rss img{width: auto;}
-#rss:hover{width: 10%;}
-#rss:hover img{width: auto;}
-
-#more{
-	position: fixed;
-	right: 0;
-	top: 59%;
-	width: 4%;
-	height: 6%;
-	background-color: #8d8d8d;
-	transition:width 0.5s;
-	-moz-transition:width 0.5s;
-	-webkit-transition:width 0.5s;
-	z-index: 2;
-	cursor: pointer;
-}
-#more img{width: auto;}
-#more:hover{width: 10%;}
-#more:hover img{width: auto;}
-
-/* :: Various
---------------------------------------------------------------------
---------------------------------------------------------------------
---------------------------------------------------------------------*/
-
-#footer{
-	width: 100%;
-	height: 30%;
-	top: 500%;
-	position: absolute;
-	background-color: #524f4f;
-	text-align: center;
-}
-
-#numero{
-	margin-top: 10%;
-	margin-left: 5%;
+.numero{
+	margin-left: 100px;
 	font-size: 5em;
-//	font-family: Verdana, Geneva, sans-serif;	
-//	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+	font-family: Impact;
 	color:#333333;
 	text-transform: uppercase;
 	position: relative;	
+}
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 2px solid black;
+}
+.rslides li {
+	-webkit-backface-visibility: hidden;
+	position: absolute;
+	display: none;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+.rslides li:first-child {
+	position: relative;
+	display: block;
+	float: left;
+}
+.rslides img {
+	display: block;
+	height: auto;
+	float: left;
+	width: 100%;
+	border: 0;
+}
+.social{display: none;}
+
+@media only screen and (max-width : 768px){
+	nav{
+		max-height: 0;
+		position: fixed;
+		top: 0;
+		transition: .6s ease-in-out;
+		background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+		background-color:#282828;
+		background-size:16px 16px;		
+		overflow-y: hidden;
+		z-index: 102;
+		overflow-x: scroll;
+		-webkit-overflow-scrolling: touch;
+	}	
+	nav ul {
+		padding-top: 1em;
+		border-bottom: 2px solid #ccc;
+		text-align: justify;
+		width: 35em;
+		float: initial;
+		padding-left: 2em;
+	}
+	nav ul:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	nav ul li {
+		background-color: #161616;		
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3), inset 0 -1px 1px rgba(0, 0, 0, 0.3);		
+		font-family: arial;
+		font-size: 1em;
+		padding: 0.6em;
+		text-align: center;
+		margin-right: 1em;
+		display: inline-block;
+	}
+	nav ul li a {
+		color: #ccc;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+	}
+	nav ul li a:before {
+		display: block;
+		font-family: FontAwesome;
+		font-weight: normal;
+		font-size: 2rem;
+		font-style: normal;
+		text-decoration: inherit;
+		vertical-align: top;
+		-webkit-font-smoothing: antialiased;
+	}
+	nav ul li:first-child a:before { content: '\f015'; }
+	nav ul li:nth-child(2) a:before { content: '\f05a'; }
+	nav ul li:nth-child(3) a:before { content: '\f0C0'; }
+	nav ul li:nth-child(4) a:before { content: '\f121'; }
+	nav ul li:last-child a:before { content: '\f0e0'; }
+	#inicio a, #quienes a, #miembros a, #investigacion a, #contacto a{color: black;}	
+	.i { display: none; }
+	
+	.nav-toggle{
+		display: block;
+		width: 100%;
+		background-color: rgb(90,90,90);
+		text-align: right;
+		color: white;
+		overflow: hidden;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 1.5em;
+		z-index: 10;
+	}
+	.nav-toggle i{margin-right: 15px;}
+	.nav-toggle i:hover{cursor: pointer;}
+	
+	.numero{
+		padding-top: 20px;
+		margin-left: 20px;
+		font-size: 2em;
+	}
+	
+	#page_one{padding-top: 20px;padding-bottom: 20px;}
+	#page_one img{
+		width: 90%;
+		margin-left: 5%;
+		padding-top: 40px;
+	}
+	#page_one h1{
+		font-size: 2em;
+		width: 90%;
+		margin-top: 10px;
+		margin-left: 7%;
+		
+	}
+	#page_two, #page_tree, #page_four, #page_five{ 
+		padding-top: 20px; 
+		padding-bottom: 40px;
+	}
+	#page_two p{
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 20px;
+		font-size: 1.5em;
+	}
+	#page_two div{
+		display: inline-block;
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 20px;
+	}
+	#member-list {
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 10px;
+		font-size: 1.2em;
+	}
+	#members-student, #members-engineer{
+		margin-left: 20px;
+		margin-top: 10px;
+	}	
+	#members{
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 20px;
+	}
+	.contact{
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+	}
+	.contact h1, .contact p {
+		font-size: 1em;
+	}
+	.contact h1{ font-size: 5em;}
+	#facebook, #twitter, #github, #rss, #blog{display: none;}
+	.social{
+		display: block;
+		background-color: rgb(90,90,90);
+	}
+	.social div{
+		display: inline-block;
+		width: 31%;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.social div a{
+		text-decoration: none;
+		color: white;
+		font-size: 2em;
+	}
+}
+@media only screen and (max-width : 480px){
+
 }

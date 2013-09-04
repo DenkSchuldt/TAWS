@@ -1,190 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>	    
+	<head>
 		<title>TAWS Group</title>
 		<meta charset="UTF-8">
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">	
-		<meta name="author" content="TAWS">
-		<meta name="description" content="Website">    
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
-		<link rel="stylesheet" type="text/css" href="css/estilo.css">		
-		<script language="JavaScript" type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>		
-		<link rel="shortcut icon" href="./img/favicon.ico"/>		
+		<meta http-equiv="content-type" content="text/html;">
+		<meta name="author" content="Denny K. Schuldt">
+		<meta name="description" content="TAWS Group">
+		<meta name="Keywords" content="HTML5, CSS3, Javascript, Jquery, TAWS, ESPOL, FIEC"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet prefetch" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css">
+		<link href="css/reset.css" rel="stylesheet" media="screen" type="text/css">
+		<link href="css/estilo.css" rel="stylesheet" media="screen" type="text/css">
+		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<link rel="shortcut icon" href="./img/favicon.ico"/>
 	</head>
 	<body>
-		<!-- Nav Bar -->
-		<div id="logo">
+		<header>
 			<img src="img/logo.png"/>
 			<label>TAWS</label>
-		</div>
-		<nav class="clearfix" id="main_nav">
-			<ul class="clearfix">
-				<li>Inicio</li>
-				<li>Qui&eacute;nes Somos</li>
-				<li>Miembros</li>
-				<li>Investigaci&oacute;n</li>
-				<li>Contacto</li>
+		</header>
+		<nav role="navigation">
+			<ul>
+				<li><i class="icon-home i"></i> <a href="#">Inicio</a></li>
+				<li><i class="icon-info-sign i"></i> <a href="#">Qui&eacute;nes Somos</a></li>
+				<li><i class="icon-group i"></i> <a href="#">Miembros</a></li>
+				<li><i class="icon-code i"></i> <a href="#">Investigaci&oacute;n</a></li>
+				<li><i class="icon-envelope i"></i> <a href="#">Contacto</a></li>
 			</ul>
-			<div href="#" id="pull"></div>
-		</nav>		
-		<!-- End -->
-		
-		<!-- Social -->
-		<div id="social_bar">
-			<a href="https://www.facebook.com/tawsespol" target="_blank">
-				<div id="facebook" title="Facebook">
-					<img src="img/facebook.png" width="100%" height="100%"/>
-				</div>
-			</a>
-			<a href="https://twitter.com/taws_espol" target="_blank">
-				<div id="twitter" title="Twitter">
-					<img src="img/twitter.png" width="100%" height="100%"/>
-				</div>
-			</a>
-			<a href="https://github.com/taws" target="_blank">
-				<div id="github" title="Github">
-					<img src="img/github.png" width="100%" height="100%"/>
-				</div>
-			</a>
-			<a href="http://feeds.feedburner.com/taws" target="_blank">
-				<div id="rss" title="RSS">
-					<img src="img/rss.png" width="100%" height="100%"/>
-				</div>
-			</a>
-			<a href="http://blog.espol.edu.ec/taws" target="_blank">
-				<div id="more" title="Blog">
-					<img src="img/more.png" width="100%" height="100%"/>
-				</div>
-			</a>
-		</div>
-		<!-- End -->
-				
-		<div id="page_one">
-			<img src="img/taws.png" alt="TAWS">
-			<h1>TAWS</h1>
-			<p>Grupo de investigación de tecnolog&iacute;as web y m&oacute;viles de la <strong>FIEC - ESPOL<strong></p>
-			<div id="one"></div>
-		</div>
-		<div id="page_two">
-			<p id="numero">Qui&eacute;nes <br/> Somos</p>
-			<p class="c-quienes-somos">
-				Somos un grupo de amigos,
-				estudiantes, graduados y profesores
-				que compartimos lo que aprendemos
-				en temas relacionados al desarrollo
-				de programas en la web y dispositivos
-				móviles.
-			</p>			
-			<img src="img/who.png">
-		</div>				
-		<div id="page_tree">			
-			<p id="numero">Miembros</p>			
-			<div id="member-list">
-				<h4>Coordinadora</h4>
-				<ul>
-					<li>Ing. Vanessa Cede&ntilde;o</li>
-				</ul>
-				<div  id="members-student">
-					<h4>Estudiantes</h4>
-					<ul>
-						<li>Denny Schuldt</li>
-						<li>Bryan Garc&eacute;s</li>
-						<li>Gianina Vallejo</li>											
-						<li>Alejandro Vinueza</li>
-						<li>Jos&eacute; Bed&oacute;n</li>
-						<li>Nestor Naula</li>
-						<li>Jefferson Rubio</li>
-						<li>Angel Guerra</li>
+		</nav>
+		<div class="nav-toggle"><i class="icon-th"></i></div>
+		<aside>
+			<div id="facebook" title="Facebook"><img src="img/facebook.png" width="100%" height="100%"/></div>
+			<div id="twitter" title="Twitter"><img src="img/twitter.png" width="100%" height="100%"/></div>
+			<div id="github" title="Github"><img src="img/github.png" width="100%" height="100%"/></div>
+			<div id="rss" title="RSS"><img src="img/rss.png" width="100%" height="100%"/></div>
+			<div id="blog" title="Blog"><img src="img/more.png" width="100%" height="100%"/></div>
+		</aside>
+		<section>
+			<article id="page_one">
+				<img id="taws_home_img" src="img/taws.png" alt="TAWS">
+				<h1>Grupo de investigación de tecnolog&iacute;as web y m&oacute;viles de la <br><strong>FIEC - ESPOL<strong></h1>
+			</article>
+			<article id="page_two">
+				<h2 class="numero">Qui&eacute;nes <br/> Somos</h2>
+				<p>
+					Somos un grupo de amigos,
+					estudiantes, graduados y profesores
+					que compartimos lo que aprendemos
+					en temas relacionados al desarrollo
+					de programas en la web y dispositivos
+					móviles.
+				</p>
+				<div>
+					<ul class="rslides">
+						<li><img src="img/who_01.jpg" alt=""></li>
+						<li><img src="img/who_02.jpg" alt=""></li>
 					</ul>
+					<script>
+						$(function(){ $(".rslides").responsiveSlides({
+							speed: 1000,
+							pause: true
+						}); });
+					</script>
 				</div>
-				<div  id="members-engineer">
-					<h4> Graduados</h4>
+			</article>
+			<article id="page_tree">			
+				<p class="numero">Miembros</p>
+				<div id="member-list">
+					<h4>Coordinadora</h4>
 					<ul>
-						<li>Gustavo Salazar</li>
-						<li>Marco Calder&oacute;n</li>
-						<li>Juan Plaza</li>
-						<li>Denisse Cayetano</li>
-						<li>F&eacute;lix Rivas</li>
-						<li>Allan Avenda&ntilde;o</li>
-						<li>Gustavo Cali</li>
-						<li>Jorge Salas</li>						
+						<li>Ing. Vanessa Cede&ntilde;o</li>
 					</ul>
-				</div>				
-			</div>
-			<img src="img/members.png">
-			<!--<div id="pag3Right">
-				<div id="fondoBlanco"></div>
-				<div id="fondo">
-					<form>
-						<fieldset>
-							<legend>Acerca de ti:</legend><br/><br/>
-							<label>Tu Nombre (Requerido)</label>
-							<input class="texto" type='text' name="txtNombre">
-							<label>Tu Email (Requerido)</label>
-							<input class="texto" type='text' name="txtMail">
-							<label>Carrera</label>
-							<input class="texto" type='text' name="txtCarrera">
-							<label>Lenguaje de programación que mejor manejas</label>
-							<input class="texto" type='text' name="txtCarrera">
-							<label>¿Por qué quieres ingresar a TAWS?</label>
-							<textarea type='text'></textarea>
-							<br/><br/><br/>
-							<button type="button" onClick="alertar()">Enviar</button>
-							<button type="button" onClick="moveToLeft('#page_tree')">Cancelar</button>				
-						</fieldset>
-					</form>
-				</div>	
-			</div>-->
-		</div>
-		<div id="page_four">
-			<p id="numero">Investigaci&oacute;n</p>
-			<br/><br/>
-			<div id="makeMeScrollable">				
-				<img src="img/html5_logo.png"/>				
-				<img src="img/git_logo.png"/>
-				<img src="img/rails_logo.png"/>
-				<img src="img/ruby_logo.png"/>								
-				<img src="img/android_logo.png"/>
-				<img src="img/java_logo.png"/>
-				<img src="img/play_logo.png"/>
-				<img src="img/php_logo.png"/>
-			</div>
-			<img src="img/left.png" id="move-left">
-			<img src="img/right.png" id="move-right">
-		</div>
-		<div id="page_five">
-			<p id="numero">Contacto</p>
-			<div id="information">
-				<div class="contact" id="pstn">
-					<div>
-						<img src="img/phone.png"/>
+					<div  id="members-engineer">
+						<h4> Graduados</h4>
+						<ul>
+							<li>Gustavo Salazar <a href="https://github.com/gugat" target="_blank"><i class="icon-github-alt"></i></a></li>
+							<li>Marco Calder&oacute;n <a href="https://github.com/MarkosCalderon" target="_blank"><i class="icon-github-alt"></i></a></li>
+							<li>Juan Plaza</li>
+							<li>Denisse Cayetano</li>
+							<li>F&eacute;lix Rivas</li>
+							<li>Allan Avenda&ntilde;o</li>
+							<li>Gustavo Cali</li>
+							<li>Jorge Salas</li>						
+						</ul>
+					</div>
+					<div  id="members-student">
+						<h4>Estudiantes</h4>
+						<ul>
+							<li>Denny Schuldt <a href="https://github.com/DenkSchuldt" target="_blank"><i class="icon-github-alt"></i></a></li>
+							<li>Bryan Garc&eacute;s</li>
+							<li>Gianina Vallejo</li>											
+							<li>Alejandro Vinueza</li>
+							<li>Jos&eacute; Bed&oacute;n</li>
+							<li>Nestor Naula</li>
+						</ul>
+					</div>
+				</div>
+				<div id="members">
+					<ul class="rslides">
+						<li><img src="img/members_01.png" alt=""></li>
+						<li><img src="img/members_02.jpg" alt=""></li>
+					</ul>
+					<script>
+						$(function(){ $(".rslides").responsiveSlides({
+							speed: 1000,
+							pause: true
+						}); });
+					</script>
+				</div>
+				<!--<div id="pag3Right">
+					<div id="fondoBlanco"></div>
+					<div id="fondo">
+						<form>
+							<fieldset>
+								<legend>Acerca de ti:</legend><br/><br/>
+								<label>Tu Nombre (Requerido)</label>
+								<input class="texto" type='text' name="txtNombre">
+								<label>Tu Email (Requerido)</label>
+								<input class="texto" type='text' name="txtMail">
+								<label>Carrera</label>
+								<input class="texto" type='text' name="txtCarrera">
+								<label>Lenguaje de programación que mejor manejas</label>
+								<input class="texto" type='text' name="txtCarrera">
+								<label>¿Por qué quieres ingresar a TAWS?</label>
+								<textarea type='text'></textarea>
+								<br/><br/><br/>
+								<button type="button" onClick="alertar()">Enviar</button>
+								<button type="button" onClick="moveToLeft('#page_tree')">Cancelar</button>				
+							</fieldset>
+						</form>
+					</div>	
+				</div>-->
+			</article>
+			<article id="page_four">
+				<p class="numero">Investigaci&oacute;n</p>
+				<br/><br/>
+				<!--<div id="makeMeScrollable">				
+					<img src="img/html5_logo.png"/>				
+					<img src="img/git_logo.png"/>
+					<img src="img/rails_logo.png"/>
+					<img src="img/ruby_logo.png"/>								
+					<img src="img/android_logo.png"/>
+					<img src="img/java_logo.png"/>
+					<img src="img/play_logo.png"/>
+					<img src="img/php_logo.png"/>
+				</div>
+				<img src="img/left.png" id="move-left">
+				<img src="img/right.png" id="move-right">-->
+			</article>
+			<article id="page_five">
+				<p class="numero">Contacto</p>
+				<div id="information">
+					<div class="contact" id="phone">
+						<h1><i class="icon-phone-sign"></i></h1>
 						<p>593 (4) 2 269 852</p>
 					</div>
-				</div>
-				<div class="contact" id="skype">
-					<div>
-						<img src="img/skype.png" />
+					<div class="contact" id="skype">
+						<h1><i class="icon-skype"></i></h1>
 						<p>taws_espol</p>
 					</div>
-				</div>
-				<div class="contact" id="email">
-					<div>
-						<img src="img/mail.png" />         
-						<p><a href="mailto:taws@espol.edu.ec?Subject=Saludos">taws@espol.edu.ec</a></p>
+					<div class="contact" id="email">
+						<h1><i class="icon-envelope"></i></h1>
+						<p>taws@espol.edu.ec</p>
 					</div>
 				</div>
-			</div>
-		</div>		
+				<div class="social">
+					<div><a href="https://www.facebook.com/tawsespol" target="_blank"><i class="icon-facebook-sign"></i></a></div>
+					<div><a href="https://twitter.com/taws_espol" target="_blank"><i class="icon-twitter-sign"></i></a></div>
+					<div><a href="https://github.com/taws" target="_blank"><i class="icon-github"></i></a></div>
+				</div>
+			</article>
+		</section>
 	</body>
 </html>
 
-<script language="JavaScript" type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/functions.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/jquery.kinetic.js"></script>
-<script language="JavaScript" type="text/javascript" src="js/jquery.smoothdivscroll-1.3-min.js"></script>
-<script language="JavaScript" type="text/javascript">		
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/jquery.kinetic.js"></script>
+<script type="text/javascript" src="js/jquery.smoothdivscroll-1.3-min.js"></script>
+<script type="text/javascript">		
 	$(document).ready(function () {
 		$("div#makeMeScrollable").smoothDivScroll({
 			autoScrollingMode: ""
