@@ -1,5 +1,6 @@
 
 	var lis = $('nav li');
+	var divs = $('aside div');
 	var mermbers_lis = document.querySelectorAll('#member-list li');
 	
 	$(".nav-toggle").on('click', function (e) {
@@ -15,7 +16,7 @@
 			$(window).scroll(function (event) {						
 				var y = $(this).scrollTop();            
 				if (y >= top) {					
-					$("header").fadeIn("fast");					
+					$("header").fadeIn("fast");
 				} else {        					
 					$("header").fadeOut("fast");							
 				}
@@ -39,11 +40,24 @@
 		}
 	});
 	
-	function init(){		
+	function init(){
+		divs[0].addEventListener('click', function(){window.open("https://www.facebook.com/tawsespol",'_blank')});
+		divs[1].addEventListener('click', function(){window.open("https://twitter.com/taws_espol",'_blank')});
+		divs[2].addEventListener('click', function(){window.open("https://github.com/taws",'_blank')});
+		divs[3].addEventListener('click', function(){window.open("http://feeds.feedburner.com/taws",'_blank')});
+		divs[4].addEventListener('click', function(){window.open("http://blog.espol.edu.ec/taws/",'_blank')});
 		for(var a=0; a<mermbers_lis.length; a++){
 			mermbers_lis[a].style.fontWeight = "normal";
 		}
 		lis[0].setAttribute('id','inicio');
+		setInicio();
+		setQuienes();
+		setMiembros();
+		setInvestigacion();
+		setContacto();
+	}
+	
+	function setInicio(){
 		lis[0].addEventListener('click',function(e){
 			$("nav").removeClass("show");
 			e.preventDefault();
@@ -55,6 +69,9 @@
 				}
 			}
 		});
+	}
+	
+	function setQuienes(){
 		lis[1].addEventListener('click',function(e){
 			$("nav").removeClass("show");
 			e.preventDefault();
@@ -66,6 +83,9 @@
 				}
 			}
 		});
+	}
+	
+	function setMiembros(){
 		lis[2].addEventListener('click',function(e){
 			$("nav").removeClass("show");
 			e.preventDefault();
@@ -77,6 +97,9 @@
 				}
 			}
 		});
+	}
+	
+	function setInvestigacion(){
 		lis[3].addEventListener('click',function(e){
 			$("nav").removeClass("show");
 			e.preventDefault();
@@ -88,6 +111,9 @@
 				}
 			}
 		});
+	}
+	
+	function setContacto(){
 		lis[4].addEventListener('click',function(e){
 			$("nav").removeClass("show");
 			e.preventDefault();
