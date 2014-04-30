@@ -2,7 +2,6 @@
 html, body{
 	width: 100%;
 	height: auto;
-	background-color: #EDF9EC;
 }
 
 header{
@@ -24,7 +23,7 @@ nav{
 	width: 100%;
 	text-align: right;
 	color: white;
-	background-color: rgb(90,90,90);
+	background-color: #5A5A5A;
 	position: fixed;
 	z-index: 100;
 	display: block;
@@ -61,7 +60,7 @@ nav ul li a:hover{ color: white;}
 }
 
 footer{
-	background-color: rgb(82,82,82);
+	background-color: #525252;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	text-align: center;
@@ -83,26 +82,22 @@ footer{
 #facebook:hover, #twitter:hover, #github:hover, #rss:hover, #blog:hover{width: 10%; cursor:pointer;}
 #facebook:hover img, #twitter:hover img, #github:hover img, #rss:hover img, #blog:hover img{width: auto%;}
 #facebook{background-color: #4a6ea9;top: 34%;}
-#twitter{background-color: #32def4;top: 40%;}
+#twitter{background-color: #00ACED;top: 40%;}
 #github{background-color: #3b3b3b;top: 46%;}
 #rss{background-color: #f4b83f;top: 52%;}
 #blog{background-color: #8d8d8d;top: 58%;}
 
-#inicio{ background-color: rgb(217,222,224); }
-#quienes{ background-color: #4ba3a8; }
-#miembros{ background-color: #bec465; }
-#investigacion{ background-color: rgb(242,238,238); }
-#contacto{ background-color: #EDF9EC; }
-
-/*----------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------PAGINA UNO--------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------*/
-#page_one{
-	display: block;
-	background-image: url('../img/pageOne.png');
-	padding-top: 100px;
-	padding-bottom: 60px;
+.selected{
+	background-color: #D9DEE0;
 }
+
+article {
+	display: block;
+	padding: 100px 0;
+}
+
+
+
 #page_one img{
 	width: 40%;
 	vertical-align: top;
@@ -111,28 +106,21 @@ footer{
 }
 #page_one h1{
 	font-size: 4em;
+	color: #333333;
 	display: inline-block;
 	width: 40%;
 	margin-top: 50px;
 	font-family: Century Gothic, sans-serif;
-	color: rgb(90,90,90);
 }
 
-/*----------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------PAGINA DOS--------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------*/
-#page_two{
-	display: block;
-	background-color: #4ba3a8;	
-	padding-top: 100px;
-	padding-bottom: 100px;	
-}
+/* Two */
+
 #page_two p{
-	color: white;
 	width: 40%;
 	margin-left: 100px;
 	margin-top: 50px;
 	font-size: 2em;
+	color: #333333;
 	font-family: Century Gothic, sans-serif;
 	display: inline-block;
 }
@@ -147,15 +135,8 @@ footer{
 	width: 100%;
 	vertical-align: top;
 }
-/*----------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------PAGINA TRES--------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------*/
-#page_tree{
-	display: block;
-	background-color: #bec465;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
+
+/* Three */
 
 #member-list {
 	font-family: Consolas, monaco, monospace;
@@ -175,10 +156,11 @@ footer{
 	float: left;
 	margin-left: 20px;
 	margin-top: 20px;
+	font-weight: normal;
 }
 #member-list a{
 	text-decoration: none;
-	color: rgb(15,15,15);
+	color: black;
 }
 #members{
 	display: inline-block;
@@ -236,27 +218,6 @@ footer{
 	display: block;
 }
 
-/*------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------PAGINA CUATRO--------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------*/
-#page_four{
-	display: block;
-	background-color: rgb(242,238,238);
-	background-image: url(../img/diamond-pattern.png);
-	background-repeat: repeat;
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-/*------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------PAGINA CINCO---------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------*/
-
-#page_five{
-	display: block;
-	background-color: #EDF9EC;
-	padding-top: 100px;
-}
 #information{
 	width: 100%;
 	height: auto;
@@ -350,7 +311,7 @@ iframe{
 		padding-top: 1em;
 		border-bottom: 2px solid #ccc;
 		text-align: justify;
-		width: 35em;
+		width: 42em;
 		float: initial;
 		padding-left: 2em;
 	}
@@ -385,13 +346,14 @@ iframe{
 		vertical-align: top;
 		-webkit-font-smoothing: antialiased;
 	}
-	nav ul li:first-child a:before { content: '\f015'; }
-	nav ul li:nth-child(2) a:before { content: '\f05a'; }
-	nav ul li:nth-child(3) a:before { content: '\f0C0'; }
-	nav ul li:nth-child(4) a:before { content: '\f121'; }
-	nav ul li:last-child a:before { content: '\f0e0'; }
-	#inicio a, #quienes a, #miembros a, #investigacion a, #contacto a{color: black;}	
-	.i { display: none; }
+	nav ul li:first-child a:before {content: '\f015'}
+	nav ul li:nth-child(2) a:before {content: '\f05a'}
+	nav ul li:nth-child(3) a:before {content: '\f0C0'}
+	nav ul li:nth-child(4) a:before {content: '\f121'}
+	nav ul li:nth-child(5) a:before {content: '\f121'}
+	nav ul li:last-child a:before {content: '\f0e0'}
+	#inicio a, #quienes a, #miembros a, #investigacion a, #desarrollo a, #contacto a{color: black}	
+	nav .fa{display: none;}
 	
 	.nav-toggle{
 		display: block;
@@ -427,7 +389,7 @@ iframe{
 		margin-left: 7%;
 		
 	}
-	#page_two, #page_tree, #page_four, #page_five{ 
+	#page_two, #page_tree, #page_four, #page_five, #page_six{ 
 		padding-top: 20px; 
 		padding-bottom: 40px;
 	}

@@ -20,8 +20,8 @@
 				} else {        					
 					$("header").fadeOut("fast");							
 				}
-			});			
-		}  
+			});
+		}
 	});
 	
 	$(function () {  		
@@ -41,90 +41,68 @@
 	});
 	
 	function init(){
+		var t = new Trianglify();
+		var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
+		document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
 		divs[0].addEventListener('click', function(){window.open("https://www.facebook.com/tawsespol",'_blank')});
 		divs[1].addEventListener('click', function(){window.open("https://twitter.com/taws_espol",'_blank')});
 		divs[2].addEventListener('click', function(){window.open("https://github.com/taws",'_blank')});
 		divs[3].addEventListener('click', function(){window.open("http://feeds.feedburner.com/taws",'_blank')});
 		divs[4].addEventListener('click', function(){window.open("http://blog.espol.edu.ec/taws/",'_blank')});
-		for(var a=0; a<mermbers_lis.length; a++){
-			mermbers_lis[a].style.fontWeight = "normal";
-		}
-		lis[0].setAttribute('id','inicio');
 		setInicio();
 		setQuienes();
 		setMiembros();
 		setInvestigacion();
 		setContacto();
+		$("nav").removeClass("show");
 	}
 	
 	function setInicio(){
 		lis[0].addEventListener('click',function(e){
-			$("nav").removeClass("show");
-			e.preventDefault();
 			moveVerticalTo(position('page_one'),1000);
-			this.setAttribute('id','inicio');
-			for(var i=0; i<lis.length; i++){
-				if(lis[i] != this){
-					lis[i].setAttribute('id');
-				}
-			}
+			$(this).attr("class","selected");
+			clearOthers(this);
 		});
 	}
 	
 	function setQuienes(){
 		lis[1].addEventListener('click',function(e){
-			$("nav").removeClass("show");
-			e.preventDefault();
 			moveVerticalTo(position('page_two'),1000);
-			this.setAttribute('id','quienes');
-			for(var i=0; i<lis.length; i++){
-				if(lis[i] != this){
-					lis[i].setAttribute('id');
-				}
-			}
+			$(this).attr("class","selected");
+			clearOthers(this);
 		});
 	}
 	
 	function setMiembros(){
 		lis[2].addEventListener('click',function(e){
-			$("nav").removeClass("show");
-			e.preventDefault();
 			moveVerticalTo(position('page_tree'),1000);
-			this.setAttribute('id','miembros');
-			for(var i=0; i<lis.length; i++){
-				if(lis[i] != this){
-					lis[i].setAttribute('id');
-				}
-			}
+			$(this).attr("class","selected");
+			clearOthers(this);
 		});
 	}
 	
 	function setInvestigacion(){
 		lis[3].addEventListener('click',function(e){
-			$("nav").removeClass("show");
-			e.preventDefault();
 			moveVerticalTo(position('page_four'),1000);			
-			this.setAttribute('id','investigacion');
-			for(var i=0; i<lis.length; i++){
-				if(lis[i] != this){
-					lis[i].setAttribute('id');
-				}
-			}
+			$(this).attr("class","selected");
+			clearOthers(this);
 		});
 	}
 	
 	function setContacto(){
 		lis[4].addEventListener('click',function(e){
-			$("nav").removeClass("show");
-			e.preventDefault();
-			moveVerticalTo(position('page_five'),1000);
-			this.setAttribute('id','contacto');
-			for(var i=0; i<lis.length; i++){
-				if(lis[i] != this){
-					lis[i].setAttribute('id');
-				}
-			}
+			moveVerticalTo(position('page_five'),1000);			
+			$(this).attr("class","selected");
+			clearOthers(this);
 		});
+	}
+	
+	function clearOthers(other){
+		for(var i=0; i<lis.length; i++){
+			if(lis[i] != other){
+				$(lis[i]).removeAttr("class");
+			}
+		}
 	}
 	
 	function moveVerticalTo(pos,velocidad){
@@ -140,8 +118,5 @@
 	function moveToLeft(elem){
 		$(elem).animate({"right": "-100%"},1000,"linear");				
 	}
-	function alertar(){
-		alert('Gracias, te informaremos al respecto.');
-	}	
 	
 	window.onload = init;
