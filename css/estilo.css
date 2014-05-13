@@ -136,6 +136,15 @@ article {
 	vertical-align: top;
 }
 
+#postulante {
+	font-family: Century Gothic, sans-serif;
+	font-weight: bold;
+	margin: 40px 0 0 100px;
+}
+#postulante a {
+	color: #0073BE;
+}
+
 /* Three */
 
 #member-list {
@@ -288,6 +297,10 @@ iframe{
 	border: 0;
 }
 .social{display: none;}
+#page_five {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
 
 @media only screen and (max-width : 768px){
 	nav{
@@ -420,6 +433,13 @@ iframe{
 		width: 90%;
 		margin-left: 5%;
 		margin-top: 20px;
+	}
+	#postulante {
+		margin-left: 5%;
+		font-weight: bold;
+		font-size: 1.2em;
+		text-align: center;
+		width: 90%;
 	}
 	.contact{
 		width: 100%;
