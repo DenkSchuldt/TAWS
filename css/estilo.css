@@ -2,6 +2,9 @@
 html, body{
 	width: 100%;
 	height: auto;
+	background-image: url(../img/fondo.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 header{
@@ -14,6 +17,7 @@ header{
 	margin-left: 10px;
 	line-height: 40px;	
 	display: none;
+	font-family: Century Gothic, sans-serif;
 }
 header img,header label{ vertical-align: middle;}
 
@@ -31,7 +35,7 @@ nav{
 nav ul{
 	list-style-type: none; 
 	float: right;
-	margin: 0;	
+	margin: 0;
 }
 nav li{
 	display: inline-block;
@@ -143,6 +147,8 @@ article {
 }
 #postulante a {
 	color: #0073BE;
+	font-size: 1.5em;
+	text-decoration: none;
 }
 
 /* Three */
@@ -183,48 +189,51 @@ article {
 	vertical-align: top;
 }
 
+#apps {
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+}
 
-#fondoBlanco, #fondo{
-	width: 40%;
-	height: 100%;
-	margin-left: 10%;		
-	position: absolute;	
-	background-color: white;	
+.app {
+	margin: 20px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	transition: background-color 0.5s ease;
+	background-color: #0073C0;
+	border: 2px solid #0073C0;
 }
-#fondoBlanco{opacity: 0.7;}
-#fondo{ padding-left: 5%; padding-top: 8%;}
-#fondo form input.texto {	
-	border: darkgray;
-	border-style: solid;
-	border-width: 1px;		
-	padding-bottom: 1%;	
-	padding-top: 1%;
-	width: 80%;	
-	font-family: arial,sans-serif;
+.app:hover {
+	background: white;
+}
+.app:hover label, .app:hover p, .app:hover i{
+	color: #0073C0;
+}
+.app label {
 	display: block;
-	position: relative;
+	color: white;
+	margin-top: 30px;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-family: Century Gothic, sans-serif;
 }
-#fondo form textearea{ 
-	border: darkgray;
-	border-style: solid;
-	border-width: 1px;			
-	width: 80%;	
-	height: 30%;
-	font-family: arial,sans-serif;	
-	position: absolute;
-	resize:none;
+.app p {
+	margin: 15px;
+	color: #EBEBEB;
+	font-size: 1em;
+	font-family: Century Gothic, sans-serif;
 }
-#fondo legend, label{font-family: "Arial Rounded MT Bold", Monaco, monospace;}
-#fondo legend{font-size: 300%;}
-#fondo label {display: block; margin: 1em 0 0 0;}
-#fondo button {
-	float: left;
-	position: relative;
-	padding-top: 4px;
-	padding-bottom: 4px;
-	padding-right: 15px;
-	padding-left: 15px;
+.app a { 
+	text-decoration: none;
+}
+.app i {
+	color: white;
 	display: block;
+	font-size: 1.8em;
+	cursor: pointer;
 }
 
 #information{
@@ -253,7 +262,7 @@ iframe{
 	margin: 0;
 	padding: 0;
 }
-.contact h1{ font-size: 7em;}
+.contact h1{ font-size: 5em;}
 
 #phone{background-color: #438bfb;}
 #skype{background-color: #10bef2;}
@@ -297,10 +306,12 @@ iframe{
 	border: 0;
 }
 .social{display: none;}
-#page_five {
+#page_six {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
+
+
 
 @media only screen and (max-width : 768px){
 	nav{
@@ -471,6 +482,13 @@ iframe{
 	div.scrollWrapper{
 		overflow-x: auto;
 		overflow-y: auto;
+	}
+	iframe {
+		height: 300px;
+	}
+	#page_six {
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
 }
 

@@ -4,18 +4,17 @@
 		<title>TAWS Group</title>
 		<meta charset="UTF-8">
 		<meta http-equiv="content-type" content="text/html;">
-		<meta name="author" content="Denny K. Schuldt">
-		<meta name="description" content="TAWS Group">
+		<meta name="author" content="TAWS">
+		<meta name="description" content="Grupo de Investigación de Tecnologías Web y Móviles de la ESPOL">
 		<meta name="Keywords" content="HTML5, CSS3, Javascript, Jquery, TAWS, ESPOL, FIEC"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link href="css/reset.css" rel="stylesheet" media="screen" type="text/css">
 		<link href="css/estilo.css" rel="stylesheet" media="screen" type="text/css">
-		<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
 		<link rel="shortcut icon" href="./img/favicon.ico"/>
-		<script src="http://d3js.org/d3.v3.min.js"></script>
 	</head>
 	<body>
+		<div id="background"><div>
 		<header>
 			<img src="img/logo.png"/>
 			<label>TAWS</label>
@@ -26,7 +25,7 @@
 				<li><i class="fa fa-info-circle"></i> <a href="#">Qui&eacute;nes Somos</a></li>
 				<li><i class="fa fa-users"></i> <a href="#">Miembros</a></li>
 				<li><i class="fa fa-book"></i> <a href="#">Investigaci&oacute;n</a></li>
-				<!--<li><i class="fa fa-code"></i> <a href="#">Desarrollo</a></li>-->
+				<li><i class="fa fa-code"></i> <a href="#">Desarrollo</a></li>
 				<li><i class="fa fa-envelope"></i> <a href="#">Contacto</a></li>
 			</ul>
 		</nav>
@@ -71,12 +70,12 @@
 				<div id="member-list">
 					<h4>Fundadora</h4>
 					<ul>
-						<li>Ing. Carmen Vaca</li>
+						<li>Msc. Carmen Vaca</li>
 					</ul>
 					<br>
 					<h4>Coordinadora</h4>
 					<ul>
-						<li>Ing. Vanessa Cede&ntilde;o</li>
+						<li>Msc. Vanessa Cede&ntilde;o</li>
 					</ul>
 					<div  id="members-engineer">
 						<h4> Graduados</h4>
@@ -148,10 +147,27 @@
 					<img src="img/php_logo.png"/>
 				</div>
 			</article>
-			<!--<article id="page_five">
-				<p class="numero">Desarrollo</p>
-			</article>-->
 			<article id="page_five">
+				<p class="numero">Desarrollo</p>
+				<div id="apps">
+					<div class="app">
+						<label>Scheduler</label>
+						<p>Visualiza tu horario de clases de la ESPOL</p>
+						<a href="/scheduler/"><i class="fa fa-external-link"></i></a>
+					</div>
+					<div class="app">
+						<label>Unitslab</label>
+						<p>¡Crea unidades f&iacute;sicas mientras te diviertes!</p>
+						<a href="/unitslab/"><i class="fa fa-external-link"></i></a>
+					</div>
+					<div class="app">
+						<label>GeoESPOL</label>
+						<p>Una de las mejores Universidades del Ecuador, ahora en 3D</p>
+						<a href="/geoespol/"><i class="fa fa-external-link"></i></a>
+					</div>
+				</div>
+			</article>
+			<article id="page_six">
 				<p class="numero">Contacto</p>
 				<div id="information">
 					<div class="contact" id="phone">
@@ -176,22 +192,21 @@
 			</article>
 		</section>
 		<footer>&copy; 2014 TAWS</footer>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/responsiveslides.min.js"></script>
+		<script type="text/javascript" src="js/functions.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.kinetic.js"></script>
+		<script type="text/javascript" src="js/jquery.smoothdivscroll-1.3-min.js"></script>
+		<script type="text/javascript">		
+			$(document).ready(function () {
+				$("div#makeMeScrollable").smoothDivScroll({
+					mousewheelScrolling: "allDirections",
+					autoScrollingMode: "onStart"
+				});
+			});
+		</script>
 	</body>
 </html>
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-<script type="text/javascript" src="js/functions.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
-<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="js/jquery.kinetic.js"></script>
-<script type="text/javascript" src="js/jquery.smoothdivscroll-1.3-min.js"></script>
-<script type="text/javascript" src="js/trianglify.min.js"></script>
-<script type="text/javascript">		
-	$(document).ready(function () {
-		$("div#makeMeScrollable").smoothDivScroll({
-			mousewheelScrolling: "allDirections",
-			autoScrollingMode: "onStart"
-		});
-	});
-</script>

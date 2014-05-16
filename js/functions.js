@@ -1,7 +1,6 @@
 
 	var lis = $('nav li');
 	var divs = $('aside div');
-	var mermbers_lis = document.querySelectorAll('#member-list li');
 	
 	$(".nav-toggle").on('click', function (e) {
 		$('.nav-toggle').removeClass('fixed');
@@ -41,18 +40,18 @@
 	});
 	
 	function init(){
-		var t = new Trianglify();
-		var pattern = t.generate(document.body.clientWidth, document.body.clientHeight);
-		document.body.setAttribute('style', 'background-image: '+pattern.dataUrl);
-		divs[0].addEventListener('click', function(){window.open("https://www.facebook.com/tawsespol",'_blank')});
-		divs[1].addEventListener('click', function(){window.open("https://twitter.com/taws_espol",'_blank')});
-		divs[2].addEventListener('click', function(){window.open("https://github.com/taws",'_blank')});
-		divs[3].addEventListener('click', function(){window.open("http://feeds.feedburner.com/taws",'_blank')});
-		divs[4].addEventListener('click', function(){window.open("http://blog.espol.edu.ec/taws/",'_blank')});
+		$('body').css('background-size-width',$( document ).width());
+		$('body').css('background-size-height',$( document ).height());
+		$(divs[0]).click(function(){window.open("https://www.facebook.com/tawsespol",'_blank')});
+		$(divs[1]).click(function(){window.open("https://twitter.com/taws_espol",'_blank')});
+		$(divs[2]).click(function(){window.open("https://github.com/taws",'_blank')});
+		$(divs[3]).click(function(){window.open("http://feeds.feedburner.com/taws",'_blank')});
+		$(divs[4]).click(function(){window.open("http://blog.espol.edu.ec/taws/",'_blank')});
 		setInicio();
 		setQuienes();
 		setMiembros();
 		setInvestigacion();
+		setDesarrollo();
 		setContacto();
 		$("nav").removeClass("show");
 	}
@@ -89,9 +88,17 @@
 		});
 	}
 	
-	function setContacto(){
+	function setDesarrollo(){
 		lis[4].addEventListener('click',function(e){
-			moveVerticalTo(position('page_five'),1000);			
+			moveVerticalTo(position('page_five'),1000);
+			$(this).attr("class","selected");
+			clearOthers(this);
+		});
+	}
+	
+	function setContacto(){
+		lis[5].addEventListener('click',function(e){
+			moveVerticalTo(position('page_six'),1000);			
 			$(this).attr("class","selected");
 			clearOthers(this);
 		});
@@ -111,12 +118,6 @@
 	function position(elem){
 		var offset = $('#'+elem).offset();
 		return(offset.top);
-	}
-	function moveToRight(elem){					
-		$(elem).animate({"right": "100%"},1000,"linear");
-	}
-	function moveToLeft(elem){
-		$(elem).animate({"right": "-100%"},1000,"linear");				
 	}
 	
 	window.onload = init;
