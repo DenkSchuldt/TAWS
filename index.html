@@ -21,12 +21,12 @@
 		</header>
 		<nav role="navigation">
 			<ul>
-				<li class="selected"><i class="fa fa-home"></i> <a href="#">Inicio</a></li>
-				<li><i class="fa fa-info-circle"></i> <a href="#">Qui&eacute;nes Somos</a></li>
-				<li><i class="fa fa-users"></i> <a href="#">Miembros</a></li>
-				<li><i class="fa fa-book"></i> <a href="#">Investigaci&oacute;n</a></li>
-				<li><i class="fa fa-code"></i> <a href="#">Desarrollo</a></li>
-				<li><i class="fa fa-envelope"></i> <a href="#">Contacto</a></li>
+				<li class="selected"><i class="fa fa-home"></i> <a href="#inicio">Inicio</a></li>
+				<li><i class="fa fa-info-circle"></i> <a href="#quienesSomos">Qui&eacute;nes Somos</a></li>
+				<li><i class="fa fa-users"></i> <a href="#miembros">Miembros</a></li>
+				<li><i class="fa fa-book"></i> <a href="#investigacion">Investigaci&oacute;n</a></li>
+				<li><i class="fa fa-code"></i> <a href="#desarrollo">Desarrollo</a></li>
+				<li><i class="fa fa-envelope"></i> <a href="#contacto">Contacto</a></li>
 			</ul>
 		</nav>
 		<div class="nav-toggle"><i class="fa fa-bars"></i></div>
@@ -38,158 +38,170 @@
 			<div id="blog" title="Blog"><img src="img/more.png" width="100%" height="100%"/></div>
 		</aside>
 		<section>
-			<article id="page_one">
-				<img id="taws_home_img" src="img/taws.png" alt="TAWS">
-				<h1>Grupo de investigación de tecnolog&iacute;as web y m&oacute;viles de la <strong>ESPOL</strong></h1>
-			</article>
-			<article id="page_two">
-				<h2 class="numero">Qui&eacute;nes <br/> Somos</h2>
-				<p>
-					Somos un grupo de amigos,
-					estudiantes, graduados y profesores
-					que compartimos lo que aprendemos
-					en temas relacionados al desarrollo
-					de programas en la web y dispositivos
-					móviles.
-				</p>
-				<div>
-					<ul class="rslides">
-						<li><img src="img/who_01.jpg" alt=""></li>
-						<li><img src="img/who_02.jpg" alt=""></li>
-					</ul>
-					<script>
-						$(function(){ $(".rslides").responsiveSlides({
-							speed: 1000,
-							pause: true
-						}); });
-					</script>
-				</div>
-			</article>
-			<article id="page_tree">			
-				<p class="numero">Miembros</p>
-				<div id="member-list">
-					<h4>Fundadora</h4>
-					<ul>
-						<li>Msc. Carmen Vaca</li>
-					</ul>
-					<br>
-					<h4>Coordinadora</h4>
-					<ul>
-						<li>Msc. Vanessa Cede&ntilde;o</li>
-					</ul>
-					<div  id="members-engineer">
-						<h4> Graduados</h4>
-						<ul>
-							<li>Gustavo Salazar <a href="https://github.com/gugat" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-							<li>Marco Calder&oacute;n <a href="https://github.com/MarkosCalderon" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-							<li>Juan Plaza</li>
-							<li>Denisse Cayetano</li>
-							<li>F&eacute;lix Rivas</li>
-							<li>Allan Avenda&ntilde;o</li>
-							<li>Gustavo Cali</li>
-							<li>Jorge Salas</li>						
+			<a name="inicio">
+				<article id="page_one">
+					<img id="taws_home_img" src="img/taws.png" alt="TAWS">
+					<h1>Grupo de investigación de tecnolog&iacute;as web y m&oacute;viles de la <strong>ESPOL</strong></h1>
+				</article>
+			</a>
+			<a name="quienesSomos">
+				<article id="page_two">
+					<h2 class="numero">Qui&eacute;nes <br/> Somos</h2>
+					<p>
+						Somos un grupo de amigos,
+						estudiantes, graduados y profesores
+						que compartimos lo que aprendemos
+						en temas relacionados al desarrollo
+						de programas en la web y dispositivos
+						móviles.
+					</p>
+					<div>
+						<ul class="rslides">
+							<li><img src="img/who_01.jpg" alt=""></li>
+							<li><img src="img/who_02.jpg" alt=""></li>
 						</ul>
+						<script>
+							$(function(){ $(".rslides").responsiveSlides({
+								speed: 1000,
+								pause: true
+							}); });
+						</script>
 					</div>
-					<div  id="members-student">
-						<h4>Estudiantes</h4>
+				</article>
+			</a>
+			<a name="miembros">
+				<article id="page_tree">			
+					<p class="numero">Miembros</p>
+					<div id="member-list">
+						<h4>Fundadora</h4>
 						<ul>
-							<li>Denny K. Schuldt <a href="https://github.com/DenkSchuldt" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-							<li>Bryan Garcés <a href="https://twitter.com/brgarces" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li>Estefanía Lozano <a href="https://www.facebook.com/onazol11" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li>Jefferson Cunalata <a href="https://www.facebook.com/jefferson.cunalata" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li>Hernan Ullon <a href="https://github.com/hernan06" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-							<li>José Bedón <a href="https://www.facebook.com/jose.bedon" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li>Juan Lucín <a href="https://twitter.com/jlucinf" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li>Jacqueline Ramos <a href="https://twitter.com/JackieRamosM" target="_blank"><i class="fa fa-twitter"></i></a></li>
-							<li>Nestor Naula</li>
-							<li>Angely Oyola</li>
-							<li>Xavier Villacres <a href="https://www.facebook.com/xavier.villa.921" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li>Mayra Moreira <a href="https://www.facebook.com/mayritaa18" target="_blank"><i class="fa fa-facebook"></i></a></li>
-							<li>Alejandro Vinueza</li>
-							<li>Gianina Vallejo</li>
+							<li>Msc. Carmen Vaca</li>
 						</ul>
+						<br>
+						<h4>Coordinadora</h4>
+						<ul>
+							<li>Msc. Vanessa Cede&ntilde;o</li>
+						</ul>
+						<div  id="members-engineer">
+							<h4> Graduados</h4>
+							<ul>
+								<li>Gustavo Salazar <a href="https://github.com/gugat" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+								<li>Marco Calder&oacute;n <a href="https://github.com/MarkosCalderon" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+								<li>Juan Plaza</li>
+								<li>Denisse Cayetano</li>
+								<li>F&eacute;lix Rivas</li>
+								<li>Allan Avenda&ntilde;o</li>
+								<li>Gustavo Cali</li>
+								<li>Jorge Salas</li>						
+							</ul>
+						</div>
+						<div  id="members-student">
+							<h4>Estudiantes</h4>
+							<ul>
+								<li>Denny K. Schuldt <a href="https://github.com/DenkSchuldt" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+								<li>Bryan Garcés <a href="https://twitter.com/brgarces" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li>Estefanía Lozano <a href="https://www.facebook.com/onazol11" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li>Jefferson Cunalata <a href="https://www.facebook.com/jefferson.cunalata" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li>Hernan Ullon <a href="https://github.com/hernan06" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+								<li>José Bedón <a href="https://www.facebook.com/jose.bedon" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li>Juan Lucín <a href="https://twitter.com/jlucinf" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li>Jacqueline Ramos <a href="https://twitter.com/JackieRamosM" target="_blank"><i class="fa fa-twitter"></i></a></li>
+								<li>Nestor Naula</li>
+								<li>Angely Oyola</li>
+								<li>Xavier Villacres <a href="https://www.facebook.com/xavier.villa.921" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li>Mayra Moreira <a href="https://www.facebook.com/mayritaa18" target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li>Alejandro Vinueza</li>
+								<li>Gianina Vallejo</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-				<div id="members">
-					<ul class="rslides">
-						<li><img src="img/members_01.png" alt=""></li>
-						<li><img src="img/members_02.jpg" alt=""></li>
-						<li><img src="img/members_03.jpg" alt=""></li>
-						<li><img src="img/members_04.jpg" alt=""></li>
-						<li><img src="img/backbonejs.jpg" alt=""></li>
-						<li><img src="img/bootstrap.jpg" alt=""></li>
-						<li><img src="img/firefoxos.jpg" alt=""></li>
-						<li><img src="img/treejs.jpg" alt=""></li>
-					</ul>
-					<script>
-						$(function(){ $(".rslides").responsiveSlides({
-							speed: 1000,
-							pause: true
-						}); });
-					</script>
-				</div>
-				<p id="postulante">¿Quieres ser parte de TAWS? Puedes postularte <a href="https://docs.google.com/forms/d/1LdbKSqfUUXYKxmm_wk2JfM3MeAAzI6z_T7U637srQIk/viewform" target="_blank">aqu&iacute;</a>.</p>
-			</article>
-			<article id="page_four">
-				<p class="numero">Investigaci&oacute;n</p>
-				<div id="makeMeScrollable">
-					<img src="img/html5_logo.png"/>
-					<img src="img/git_logo.png"/>
-					<img src="img/sketchup_logo.png"/>
-					<img src="img/css3_logo.png"/>
-					<img src="img/firefox-os_logo.png"/>
-					<img src="img/backbone_logo.png"/>
-					<img src="img/rails_logo.png"/>
-					<img src="img/ruby_logo.png"/>
-					<img src="img/android_logo.png"/>
-					<img src="img/java_logo.png"/>
-					<img src="img/play_logo.png"/>
-					<img src="img/php_logo.png"/>
-				</div>
-			</article>
-			<article id="page_five">
-				<p class="numero">Desarrollo</p>
-				<div id="apps">
-					<div class="app">
-						<label>Scheduler</label>
-						<p>Visualiza tu horario de clases de la ESPOL</p>
-						<a href="/scheduler/"><i class="fa fa-external-link"></i></a>
+					<div id="members">
+						<ul class="rslides">
+							<li><img src="img/members_01.png" alt=""></li>
+							<li><img src="img/members_02.jpg" alt=""></li>
+							<li><img src="img/members_03.jpg" alt=""></li>
+							<li><img src="img/members_04.jpg" alt=""></li>
+							<li><img src="img/backbonejs.jpg" alt=""></li>
+							<li><img src="img/bootstrap.jpg" alt=""></li>
+							<li><img src="img/firefoxos.jpg" alt=""></li>
+							<li><img src="img/treejs.jpg" alt=""></li>
+						</ul>
+						<script>
+							$(function(){ $(".rslides").responsiveSlides({
+								speed: 1000,
+								pause: true
+							}); });
+						</script>
 					</div>
-					<div class="app">
-						<label>Unitslab</label>
-						<p>¡Crea unidades f&iacute;sicas mientras te diviertes!</p>
-						<a href="/unitslab/"><i class="fa fa-external-link"></i></a>
+					<p id="postulante">¿Quieres ser parte de TAWS? Puedes postularte <a href="https://docs.google.com/forms/d/1LdbKSqfUUXYKxmm_wk2JfM3MeAAzI6z_T7U637srQIk/viewform" target="_blank">aqu&iacute;</a>.</p>
+				</article>
+			</a>
+			<a name="investigacion">
+				<article id="page_four">
+					<p class="numero">Investigaci&oacute;n</p>
+					<div id="makeMeScrollable">
+						<img src="img/html5_logo.png"/>
+						<img src="img/git_logo.png"/>
+						<img src="img/sketchup_logo.png"/>
+						<img src="img/css3_logo.png"/>
+						<img src="img/firefox-os_logo.png"/>
+						<img src="img/backbone_logo.png"/>
+						<img src="img/rails_logo.png"/>
+						<img src="img/ruby_logo.png"/>
+						<img src="img/android_logo.png"/>
+						<img src="img/java_logo.png"/>
+						<img src="img/play_logo.png"/>
+						<img src="img/php_logo.png"/>
 					</div>
-					<div class="app">
-						<label>GeoESPOL</label>
-						<p>Una de las mejores Universidades del Ecuador, ahora en 3D</p>
-						<a href="/geoespol/"><i class="fa fa-external-link"></i></a>
+				</article>
+			</a>
+			<a name="desarrollo">
+				<article id="page_five">
+					<p class="numero">Desarrollo</p>
+					<div id="apps">
+						<div class="app">
+							<label>Scheduler</label>
+							<p>Visualiza tu horario de clases de la ESPOL</p>
+							<a href="/scheduler/" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
+						<div class="app">
+							<label>Unitslab</label>
+							<p>¡Crea unidades f&iacute;sicas mientras te diviertes!</p>
+							<a href="/unitslab/" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
+						<div class="app">
+							<label>GeoESPOL</label>
+							<p>Una de las mejores Universidades del Ecuador, ahora en 3D</p>
+							<a href="/geoespol/" target="_blank"><i class="fa fa-external-link"></i></a>
+						</div>
 					</div>
-				</div>
-			</article>
-			<article id="page_six">
-				<p class="numero">Contacto</p>
-				<div id="information">
-					<div class="contact" id="phone">
-						<h1><i class="fa fa-phone-square"></i></h1>
-						<p>593 (4) 2 269 852</p>
+				</article>
+			</a>
+			<a name="contacto">
+				<article id="page_six">
+					<p class="numero">Contacto</p>
+					<div id="information">
+						<div class="contact" id="phone">
+							<h1><i class="fa fa-phone-square"></i></h1>
+							<p>593 (4) 2 269 852</p>
+						</div>
+						<div class="contact" id="skype">
+							<h1><i class="fa fa-skype"></i></h1>
+							<p>taws_espol</p>
+						</div>
+						<div class="contact" id="email">
+							<h1><i class="fa fa-envelope"></i></h1>
+							<p>taws@espol.edu.ec</p>
+						</div>
 					</div>
-					<div class="contact" id="skype">
-						<h1><i class="fa fa-skype"></i></h1>
-						<p>taws_espol</p>
+					<div class="social">
+						<div><a href="https://www.facebook.com/tawsespol" target="_blank"><i class="fa fa-facebook"></i></a></div>
+						<div><a href="https://twitter.com/taws_espol" target="_blank"><i class="fa fa-twitter"></i></a></div>
+						<div><a href="https://github.com/taws" target="_blank"><i class="fa fa-github-alt"></i></a></div>
 					</div>
-					<div class="contact" id="email">
-						<h1><i class="fa fa-envelope"></i></h1>
-						<p>taws@espol.edu.ec</p>
-					</div>
-				</div>
-				<div class="social">
-					<div><a href="https://www.facebook.com/tawsespol" target="_blank"><i class="fa fa-facebook"></i></a></div>
-					<div><a href="https://twitter.com/taws_espol" target="_blank"><i class="fa fa-twitter"></i></a></div>
-					<div><a href="https://github.com/taws" target="_blank"><i class="fa fa-github-alt"></i></a></div>
-				</div>
-				<iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=213151199185335161095.0004e6b369f95e89af4e4&amp;ie=UTF8&amp;t=m&amp;ll=-2.145266,-79.966468&amp;spn=0.005146,0.006866&amp;z=17&amp;output=embed"></iframe>
-			</article>
+					<iframe width="100%" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.es/maps/ms?msa=0&amp;msid=213151199185335161095.0004e6b369f95e89af4e4&amp;ie=UTF8&amp;t=m&amp;ll=-2.145266,-79.966468&amp;spn=0.005146,0.006866&amp;z=17&amp;output=embed"></iframe>
+				</article>
+			</a>
 		</section>
 		<footer>&copy; 2014 TAWS</footer>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

@@ -57,7 +57,7 @@
 	}
 	
 	function setInicio(){
-		lis[0].addEventListener('click',function(e){
+		$(lis[0]).click(function(e){
 			moveVerticalTo(position('page_one'),1000);
 			$(this).attr("class","selected");
 			clearOthers(this);
@@ -65,7 +65,7 @@
 	}
 	
 	function setQuienes(){
-		lis[1].addEventListener('click',function(e){
+		$(lis[1]).click(function(e){
 			moveVerticalTo(position('page_two'),1000);
 			$(this).attr("class","selected");
 			clearOthers(this);
@@ -73,7 +73,7 @@
 	}
 	
 	function setMiembros(){
-		lis[2].addEventListener('click',function(e){
+		$(lis[2]).click(function(e){
 			moveVerticalTo(position('page_tree'),1000);
 			$(this).attr("class","selected");
 			clearOthers(this);
@@ -81,7 +81,7 @@
 	}
 	
 	function setInvestigacion(){
-		lis[3].addEventListener('click',function(e){
+		$(lis[3]).click(function(e){
 			moveVerticalTo(position('page_four'),1000);			
 			$(this).attr("class","selected");
 			clearOthers(this);
@@ -89,7 +89,7 @@
 	}
 	
 	function setDesarrollo(){
-		lis[4].addEventListener('click',function(e){
+		$(lis[4]).click(function(e){
 			moveVerticalTo(position('page_five'),1000);
 			$(this).attr("class","selected");
 			clearOthers(this);
@@ -97,7 +97,7 @@
 	}
 	
 	function setContacto(){
-		lis[5].addEventListener('click',function(e){
+		$(lis[5]).click(function(e){
 			moveVerticalTo(position('page_six'),1000);			
 			$(this).attr("class","selected");
 			clearOthers(this);

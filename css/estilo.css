@@ -202,15 +202,14 @@ article {
 	border-radius: 100%;
 	display: inline-block;
 	vertical-align: middle;
-	transition: background-color 0.5s ease;
+	transition: background-color 0.2s ease;
 	background-color: #0073C0;
-	border: 2px solid #0073C0;
 }
 .app:hover {
-	background: white;
+	background: #5A5A5A;
 }
 .app:hover label, .app:hover p, .app:hover i{
-	color: #0073C0;
+	color: white;
 }
 .app label {
 	display: block;
@@ -373,7 +372,7 @@ iframe{
 	nav ul li:first-child a:before {content: '\f015'}
 	nav ul li:nth-child(2) a:before {content: '\f05a'}
 	nav ul li:nth-child(3) a:before {content: '\f0C0'}
-	nav ul li:nth-child(4) a:before {content: '\f121'}
+	nav ul li:nth-child(4) a:before {content: '\f02d'}
 	nav ul li:nth-child(5) a:before {content: '\f121'}
 	nav ul li:last-child a:before {content: '\f0e0'}
 	#inicio a, #quienes a, #miembros a, #investigacion a, #desarrollo a, #contacto a{color: black}	
