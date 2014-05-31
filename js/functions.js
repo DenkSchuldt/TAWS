@@ -40,8 +40,6 @@
 	});
 	
 	function init(){
-		$('body').css('background-size-width',$( document ).width());
-		$('body').css('background-size-height',$( document ).height());
 		$(divs[0]).click(function(){window.open("https://www.facebook.com/tawsespol",'_blank')});
 		$(divs[1]).click(function(){window.open("https://twitter.com/taws_espol",'_blank')});
 		$(divs[2]).click(function(){window.open("https://github.com/taws",'_blank')});

@@ -2,9 +2,6 @@
 html, body{
 	width: 100%;
 	height: auto;
-	background-image: url(../img/fondo.png);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
 }
 
 header{
@@ -99,8 +96,6 @@ article {
 	display: block;
 	padding: 100px 0;
 }
-
-
 
 #page_one img{
 	width: 40%;
@@ -310,6 +305,19 @@ iframe{
 	padding-bottom: 0;
 }
 
+#background {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background-image: url(../img/fondo.png);
+	background-size: 100% 100%;
+	z-index: -1000;
+}
 
 
 @media only screen and (max-width : 768px){
