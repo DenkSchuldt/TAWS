@@ -68,6 +68,10 @@ footer{
 	color: white;
 	font-family: Century Gothic, sans-serif;
 }
+	footer a {
+		color: white;
+		text-decoration: none;
+	}
 
 #facebook, #twitter, #github, #rss, #blog{
 	position: fixed;
@@ -85,8 +89,7 @@ footer{
 #facebook{background-color: #4a6ea9;top: 34%;}
 #twitter{background-color: #00ACED;top: 40%;}
 #github{background-color: #3b3b3b;top: 46%;}
-#rss{background-color: #f4b83f;top: 52%;}
-#blog{background-color: #8d8d8d;top: 58%;}
+#blog{background-color: #8d8d8d;top: 52%;}
 
 .selected{
 	background-color: #D9DEE0;
@@ -118,7 +121,7 @@ article {
 	width: 40%;
 	margin-left: 100px;
 	margin-top: 50px;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: #333333;
 	font-family: Century Gothic, sans-serif;
 	display: inline-block;
@@ -242,7 +245,7 @@ iframe{
 
 .contact{
 	display: inline-block;
-	width: 33.33%;
+	width: 100%;
 	color: white;
 	float: left;
 	font-family: Century Gothic, sans-serif;
@@ -257,9 +260,6 @@ iframe{
 	padding: 0;
 }
 .contact h1{ font-size: 5em;}
-
-#phone{background-color: #438bfb;}
-#skype{background-color: #10bef2;}
 #email{background-color: #00a8ec;}
 
 .numero{
